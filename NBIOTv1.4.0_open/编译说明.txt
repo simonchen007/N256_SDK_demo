@@ -1,0 +1,17 @@
+
+第一步： 先双击 msys.bat
+
+第二步： cd  NBIOTv1.4.0_open
+
+第三步： ./make_n256_rfquar.sh     //这是编译四频段（B1 B3 B5 B8）版本
+         ./make_n256_rfall.sh     //这是编译全频段（B1 B3 B5 B8 B20 。。。）版本
+         ./make_n256_rfduar.sh     //这是编译两频段（B5 B8）版本
+         
+         
+         
+【配置demo 演示的宏】
+在 NBIOTv1.4.0_open\project\mt2625_evb\apps\nbiot_m2m_demo\GCC\feature.mk 里
+
+LLLWM2M_DEMO_SUPPORT = y
+LLUDP_DEMO_SUPPORT = n
+LLTCP_DEMO_SUPPORT = n

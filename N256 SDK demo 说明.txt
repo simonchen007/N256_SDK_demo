@@ -1,0 +1,9 @@
+在 NB1.4.0_open\project\mt2625_evb\apps\nbiot_m2m_demo\src\tasks下
+建立了一套Demo系统框架，一共有8个任务，HLLinkTask保持网络链路畅通，
+HLWatchTask 准备用来检测各个任务直接的通讯正常，
+其他由可以自定义，任务开关也由用户自己。
+
+
+关于打印log，可以直接调用 hal_uart_send_dma 直接打印到AT命令口，方便调试。 
+
+HLLinkTask保持网络链路畅通,有UDP、TCP、电信IOT 方式
